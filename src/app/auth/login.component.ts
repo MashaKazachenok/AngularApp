@@ -3,9 +3,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
-import { AlertService, AuthenticationService } from '../services';
+import { AlertService } from '../core/services/alert.service';
+import { AuthenticationService } from '../core/services/authentication.service';
 
-@Component({templateUrl: 'login.component.html'})
+@Component({templateUrl: './login.component.html'})
 export class LoginComponent implements OnInit {
     loginForm: FormGroup;
     loading = false;

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 
 import { User } from '../models';
-import { UserService } from '../services';
+import { UserService } from '../core/services/user.service';
 
 @Component({templateUrl: 'settings.component.html'})
 export class SettingsComponent implements OnInit {
@@ -19,7 +19,7 @@ export class SettingsComponent implements OnInit {
 
   deleteUser(id: number) {
     this.userService.delete(id).pipe(first()).subscribe(() => {
-      this.loadAllUsers()
+      this.loadAllUsers();
     });
   }
 
