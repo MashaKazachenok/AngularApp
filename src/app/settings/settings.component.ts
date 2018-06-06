@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { first } from 'rxjs/operators';
+import {Component, OnInit} from '@angular/core';
+import {first} from 'rxjs/operators';
 
-import { User } from '../models';
-import { UserService } from '../core/services/user.service';
+import {User} from '../core/models/user';
+import {UserService} from '../core/services/user.service';
 
 @Component({templateUrl: 'settings.component.html'})
 export class SettingsComponent implements OnInit {

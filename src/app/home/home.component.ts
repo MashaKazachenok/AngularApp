@@ -1,5 +1,5 @@
-﻿import { Component } from '@angular/core';
-import { User } from '../models';
+﻿import {Component} from '@angular/core';
+import {User} from '../core/models/user';
 
 @Component({templateUrl: 'home.component.html'})
 
