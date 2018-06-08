@@ -8,6 +8,7 @@ import {CoreModule} from './core/core.module';
 import {HomeModule} from './home/home.module';
 import {SettingsModule} from './settings/settings.module';
 import {AuthModule} from './auth/auth.module';
+import {CompanyModule} from './company/company.module';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import {AuthModule} from './auth/auth.module';
     CoreModule,
     HomeModule,
     SettingsModule,
+    CompanyModule,
     AuthModule,
 
   ],

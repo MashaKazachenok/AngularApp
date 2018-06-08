@@ -7,6 +7,7 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {JwtInterceptor} from './helpers/jwt.interceptor';
 import {fakeBackendProvider} from './helpers/fake-backend';
 import {GuardModule} from './guards/guard.module';
+import {FilterPipe} from './pipes/filter.pipe';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {GuardModule} from './guards/guard.module';
       multi: true
     },
     fakeBackendProvider,
-    AlertService, UserService
+    AlertService, UserService,
+    FilterPipe,
   ],
 })
 export class CoreModule {
